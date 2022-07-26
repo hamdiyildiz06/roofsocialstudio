@@ -1,5 +1,5 @@
 <!-- ================ -->
-<section class="main-container">
+<section class="main-container dark-bg">
 
     <div class="container">
         <div class="row">
@@ -19,9 +19,9 @@
 
                     <?php foreach ($brands as $brand) { ?>
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 justify-content-center">
                             <div class="image-box shadow text-center mb-20">
-                                <div class="overlay-container">
+                                <div class="overlay-container justify-content-center">
                                     <img src="<?php echo get_picture("brands_v", $brand->img_url, "350x216"); ?>" alt="<?php echo $brand->title; ?>">
                                     <div class="overlay-top">
                                         <div class="text"></div>

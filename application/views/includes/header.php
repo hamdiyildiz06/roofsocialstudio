@@ -37,7 +37,9 @@
                         <div id="logo" class="logo">
                             <a href="<?php echo base_url(); ?>">
                                 <img id="logo_img"
-                                     src="<?php echo get_picture("settings_v", $settings->logo, "150x35"); ?>"
+                                     src="<?= base_url()."images/logo_light_blue.png"; ?>"
+                                     <?php // echo get_picture("settings_v", $settings->logo, "150x35"); ?>
+
                                      alt="<?php echo $settings->company_name; ?>">
                             </a>
                         </div>
@@ -103,7 +105,20 @@
                                         </li>
 
                                         <li class="nav-item ">
-                                            <a href="<?php echo base_url("urun-listesi"); ?>" class="nav-link">Ürünlerimiz</a>
+                                            <a href="<?php echo base_url("hizmetlerimiz"); ?>" class="nav-link">Hizmetlerimiz</a>
+                                        </li>
+
+                                        <li class="nav-item ">
+                                            <a href="<?php echo base_url("markalar"); ?>" class="nav-link">Markalar</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown ">
+                                            <a href="#" class="nav-link dropdown-toggle" id="third-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeriler</a>
+                                            <ul class="dropdown-menu" aria-labelledby="third-dropdown">
+                                                <li ><a href="<?php echo base_url("fotograf-galerisi"); ?>">Resim Galerisi</a></li>
+                                                <li ><a href="<?php echo base_url("video-galerisi"); ?>">Video Galerisi</a></li>
+                                                <li ><a href="<?php echo base_url("dosya-galerisi"); ?>">Dosya Galerisi</a></li>
+                                            </ul>
                                         </li>
 
                                     </ul>

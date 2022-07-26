@@ -1,7 +1,9 @@
 
 <!-- banner start -->
 <!-- ================ -->
-<div class="banner dark-translucent-bg" style="background-image:url('<?php echo base_url("assets/images");?>/page-about-banner-1.jpg'); background-position: 50% 27%;">
+<!--<div class="banner dark-translucent-bg" style="background-image:url('  base_url("assets/images");?>/roof.jpg'); background-position: 50% 27%;">-->
+<div class="banner dark-bg">
+
     <!-- breadcrumb start -->
     <!-- ================ -->
 <!--    <div class="breadcrumb-container">-->
@@ -29,7 +31,7 @@
 
 <!-- main-container start -->
 <!-- ================ -->
-<section class="main-container padding-bottom-clear">
+<section class="main-container padding-bottom-clear dark-bg">
 
     <div class="container">
         <div class="row">
@@ -54,7 +56,8 @@
 
     <!-- section start -->
     <!-- ================ -->
-    <div class="section light-gray-bg">
+    <div class="section dark-bg">
+<!--    <div class="section light-gray-bg dark-bg">-->
         <div class="container">
             <h3>Neden bizi <strong>seçmelisiniz</strong></h3>
             <div class="separator-2"></div>

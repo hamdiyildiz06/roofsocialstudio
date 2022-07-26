@@ -1,4 +1,4 @@
-<section class="main-container dark-bg">
+<section class="main-container dark-translucent-bg" style="background-image:url('<?php echo base_url("assets/images");?>/roof.jpg'); background-position: 50% 27%;">
     <div class="container">
         <h1 class="page-title">Hizmetlerimiz</h1>
         <p>Sunduğumuz Hizmetlerde Kalite, Zaman ve Memnuniyet Önceliğimizdir</p>
@@ -24,7 +24,7 @@
                         </div>
                         <div class="body">
                             <p><?php echo character_limiter(strip_tags($product->description), 30); ?></p>
-                            <a href="<?php echo base_url("urun-detay/$product->url"); ?>" class="btn btn-default btn-sm btn-hvr hvr-sweep-to-right margin-clear">Görüntüle<i class="fa fa-arrow-right pl-10"></i></a>
+                            <a href="<?php echo base_url("hizmetlerimiz-detay/$product->url"); ?>" class="btn btn-default btn-sm btn-hvr hvr-sweep-to-right margin-clear">Görüntüle<i class="fa fa-arrow-right pl-10"></i></a>
                         </div>
                     </div>
                 </div>

@@ -13,6 +13,8 @@ function convertToSEO($text)
 function get_readable_date($date)
 {
     return strftime('%e %B %Y', strtotime($date));
+
+
 }
 
 function get_active_user(){
@@ -138,9 +140,9 @@ function get_settings(){
         if(!$settings) {
 
             $settings = new stdClass();
-            $settings->company_name = "kablosuzkedi";
+            $settings->company_name = "yildizturk";
             $settings->logo         = "default";
-            
+
         }
 
         $t->session->set_userdata("settings", $settings);

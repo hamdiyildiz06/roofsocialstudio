@@ -53,8 +53,12 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route["urun-listesi"] = "home/product_list";
-$route["urun-detay/(:any)"] = "home/product_detail/$1";
+//$route["urun-listesi"] = "home/product_list";
+//$route["urun-detay/(:any)"] = "home/product_detail/$1";
+
+$route["hizmetlerimiz"] = "home/product_list";
+$route["hizmetlerimiz-detay/(:any)"] = "home/product_detail/$1";
+
 
 $route["portfolyo-listesi"]      = "home/portfolio_list";
 $route["portfolyo-detay/(:any)"] = "home/portfolio_detail/$1";
@@ -64,7 +68,7 @@ $route["egitim-detay/(:any)"] = "home/course_detail/$1";
 
 $route["referanslar"]   = "home/reference_list";
 $route["markalar"]      = "home/brand_list";
-$route["hizmetlerimiz"] = "home/service_list";
+//$route["hizmetlerimiz"] = "home/service_list";
 $route["roof-Social-kim"]    = "home/about_us";
 
 $route["iletisim"]        = "home/contact";

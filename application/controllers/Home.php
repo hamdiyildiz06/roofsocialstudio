@@ -10,6 +10,8 @@ class Home extends CI_Controller {
 
         $this->viewFolder = "homepage";
         $this->load->helper("text");
+        $this->load->model("product_model");
+        $this->load->model("gallery_model");
 
     }
 
@@ -88,6 +90,19 @@ class Home extends CI_Controller {
             ), "rank ASC"
         );
 
+        $viewData->products_four = $this->product_model->get_all(
+            array(
+                "isActive"  => 1
+            ),"rand()",array("count" => 4, "start" => 0)
+        );
+
+        $viewData->galleries_six = $this->gallery_model->get_all(
+            array(
+                "isActive"      => 1,
+                "gallery_type"  => "image"
+            ), "rand()",array("count" => 6, "start" => 0)
+        );
+
 
         $this->load->view($viewData->viewFolder, $viewData);
 
@@ -120,6 +135,19 @@ class Home extends CI_Controller {
                 "isActive"  => 1,
                 "id !="     => $viewData->product->id
             ), "rand()", array("start" => 0, "count" => 3)
+        );
+
+        $viewData->products_four = $this->product_model->get_all(
+            array(
+                "isActive"  => 1
+            ),"rand()",array("count" => 4, "start" => 0)
+        );
+
+        $viewData->galleries_six = $this->gallery_model->get_all(
+            array(
+                "isActive"      => 1,
+                "gallery_type"  => "image"
+            ), "rand()",array("count" => 6, "start" => 0)
         );
 
         $this->load->view($viewData->viewFolder, $viewData);
@@ -250,6 +278,19 @@ class Home extends CI_Controller {
             ), "rank ASC"
         );
 
+        $viewData->products_four = $this->product_model->get_all(
+            array(
+                "isActive"  => 1
+            ),"rand()",array("count" => 4, "start" => 0)
+        );
+
+        $viewData->galleries_six = $this->gallery_model->get_all(
+            array(
+                "isActive"      => 1,
+                "gallery_type"  => "image"
+            ), "rand()",array("count" => 6, "start" => 0)
+        );
+
         $this->load->view($viewData->viewFolder, $viewData);
 
     }
@@ -278,8 +319,23 @@ class Home extends CI_Controller {
         $viewData->viewFolder = "about_v";
 
         $this->load->model("settings_model");
-
         $viewData->settings = $this->settings_model->get();
+
+        $viewData->products_four = $this->product_model->get_all(
+            array(
+                "isActive"  => 1
+            ),"rand()",array("count" => 4, "start" => 0)
+        );
+
+        $viewData->galleries_six = $this->gallery_model->get_all(
+            array(
+                "isActive"      => 1,
+                "gallery_type"  => "image"
+            ), "rand()",array("count" => 6, "start" => 0)
+        );
+
+
+
 
         $this->load->view($viewData->viewFolder, $viewData);
 
@@ -314,6 +370,20 @@ class Home extends CI_Controller {
         );
 
         $viewData->captcha = create_captcha($config);
+
+
+        $viewData->products_four = $this->product_model->get_all(
+            array(
+                "isActive"  => 1
+            ),"rand()",array("count" => 4, "start" => 0)
+        );
+
+        $viewData->galleries_six = $this->gallery_model->get_all(
+            array(
+                "isActive"      => 1,
+                "gallery_type"  => "image"
+            ), "rand()",array("count" => 6, "start" => 0)
+        );
 
         $this->session->set_userdata("captcha", $viewData->captcha["word"]);
 
@@ -513,6 +583,19 @@ class Home extends CI_Controller {
             ), "rank DESC"
         );
 
+        $viewData->galleries_six = $this->gallery_model->get_all(
+            array(
+                "isActive"      => 1,
+                "gallery_type"  => "image"
+            ), "rand()",array("count" => 6, "start" => 0)
+        );
+
+        $viewData->products_four = $this->product_model->get_all(
+            array(
+                "isActive"  => 1
+            ),"rand()",array("count" => 4, "start" => 0)
+        );
+
         $this->load->view($viewData->viewFolder, $viewData);
 
     }
@@ -536,6 +619,19 @@ class Home extends CI_Controller {
                 ), "rank DESC"
             );
 
+            $viewData->galleries_six = $this->gallery_model->get_all(
+                array(
+                    "isActive"      => 1,
+                    "gallery_type"  => "image"
+                ), "rand()",array("count" => 6, "start" => 0)
+            );
+
+            $viewData->products_four = $this->product_model->get_all(
+                array(
+                    "isActive"  => 1
+                ),"rand()",array("count" => 4, "start" => 0)
+            );
+
             $this->load->view($viewData->viewFolder, $viewData);
 
         }
@@ -556,6 +652,19 @@ class Home extends CI_Controller {
                 "isActive"      => 1,
                 "gallery_type"  => "video"
             ), "rank DESC"
+        );
+
+        $viewData->galleries_six = $this->gallery_model->get_all(
+            array(
+                "isActive"      => 1,
+                "gallery_type"  => "image"
+            ), "rand()",array("count" => 6, "start" => 0)
+        );
+
+        $viewData->products_four = $this->product_model->get_all(
+            array(
+                "isActive"  => 1
+            ),"rand()",array("count" => 4, "start" => 0)
         );
 
         $this->load->view($viewData->viewFolder, $viewData);
@@ -581,6 +690,19 @@ class Home extends CI_Controller {
                 ), "rank DESC"
             );
 
+            $viewData->galleries_six = $this->gallery_model->get_all(
+                array(
+                    "isActive"      => 1,
+                    "gallery_type"  => "image"
+                ), "rand()",array("count" => 6, "start" => 0)
+            );
+
+            $viewData->products_four = $this->product_model->get_all(
+                array(
+                    "isActive"  => 1
+                ),"rand()",array("count" => 4, "start" => 0)
+            );
+
             $this->load->view($viewData->viewFolder, $viewData);
 
         }
@@ -601,6 +723,19 @@ class Home extends CI_Controller {
                 "isActive"      => 1,
                 "gallery_type"  => "file"
             ), "rank DESC"
+        );
+
+        $viewData->galleries_six = $this->gallery_model->get_all(
+            array(
+                "isActive"      => 1,
+                "gallery_type"  => "image"
+            ), "rand()",array("count" => 6, "start" => 0)
+        );
+
+        $viewData->products_four = $this->product_model->get_all(
+            array(
+                "isActive"  => 1
+            ),"rand()",array("count" => 4, "start" => 0)
         );
 
         $this->load->view($viewData->viewFolder, $viewData);
@@ -624,6 +759,19 @@ class Home extends CI_Controller {
                     "isActive"      => 1,
                     "gallery_id"    => $viewData->gallery->id,
                 ), "rank DESC"
+            );
+
+            $viewData->galleries_six = $this->gallery_model->get_all(
+                array(
+                    "isActive"      => 1,
+                    "gallery_type"  => "image"
+                ), "rand()",array("count" => 6, "start" => 0)
+            );
+
+            $viewData->products_four = $this->product_model->get_all(
+                array(
+                    "isActive"  => 1
+                ),"rand()",array("count" => 4, "start" => 0)
             );
 
             $this->load->view($viewData->viewFolder, $viewData);
