@@ -1,6 +1,6 @@
 <!-- main-container start -->
 <!-- ================ -->
-<section class="main-container padding-bottom-clear dark-bg-black">
+<section class="main-container padding-bottom-clear dark-bg">
 
     <div class="container">
         <div class="row">
@@ -8,7 +8,7 @@
             <!-- main start -->
             <!-- ================ -->
             <div class="main col-md-12">
-                <h3 class="title" style="color: darkgrey"><strong>Hakkımızda</strong></h3>
+                <h3 class="title"><strong>Hakkımızda</strong></h3>
                 <div class="separator-2"></div>
                 <div class="row">
                     <div class="col-md-12">

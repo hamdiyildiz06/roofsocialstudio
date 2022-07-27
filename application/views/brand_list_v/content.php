@@ -1,5 +1,5 @@
 <!-- ================ -->
-<section class="main-container dark-bg-black">
+<section class="main-container dark-bg">
 
     <div class="container">
         <div class="row">
@@ -10,7 +10,7 @@
 
                 <!-- page-title start -->
                 <!-- ================ -->
-                <h1 class="page-title" style="color: darkgrey">Marka Listesi</h1>
+                <h1 class="page-title">Marka Listesi</h1>
                 <div class="separator-2"></div>
                 <!-- page-title end -->
                 <p class="lead">Çalıştığımız markaların listesini aşağıda görebilirsiniz</p>

@@ -1,4 +1,4 @@
-<div class="main-container dark-bg-black">
+<div class="main-container dark-bg">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -59,7 +59,7 @@
                             <!-- main start -->
                             <!-- ================ -->
                             <div class="main col-md-12">
-                                <h1 class="title" style="color: darkgrey"><?php echo $product->title; ?></h1>
+                                <h1 class="title"><?php echo $product->title; ?></h1>
                                 <div class="separator-2"></div>
                                 <p><?php echo $product->description; ?></p>
                             </div>

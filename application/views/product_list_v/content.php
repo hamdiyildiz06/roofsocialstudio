@@ -1,6 +1,6 @@
-<section class="main-container dark-bg-black">
+<section class="main-container dark-bg">
     <div class="container">
-        <h1 class="page-title" style="color: #cccccc">Hizmetlerimiz</h1>
+        <h1 class="page-title">Hizmetlerimiz</h1>
         <p>Sunduğumuz Hizmetlerde Kalite, Zaman ve Memnuniyet Önceliğimizdir</p>
         <div class="separator-2"></div>
 

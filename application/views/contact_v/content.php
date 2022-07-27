@@ -39,7 +39,7 @@
 
 <!-- main-container start -->
 <!-- ================ -->
-<section class="main-container">
+<section class="main-container dark-bg">
 
     <div class="container">
         <div class="row">
@@ -47,7 +47,7 @@
             <!-- main start -->
             <!-- ================ -->
             <div class="main col-md-12 space-bottom">
-                <h2 class="title">Bize yazın...</h2>
+                <h2 class="title" style="color: darkgrey">Bize yazın...</h2>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="contact-form">
@@ -99,35 +99,4 @@
     </div>
 </section>
 <!-- main-container end -->
-
-<!-- section start -->
-<!-- ================ -->
-<section class="section pv-40 parallax background-img-3 dark-translucent-bg" style="background-position:50% 60%;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="call-to-action text-center">
-                    <div class="row">
-                        <div class="col-sm-12 col-sm-offset-2">
-                            <h2 class="title">En yeni haberler için abone olun</h2>
-                            <p>
-                                Kampanyalarımızdan, fırsatlarımızdan ve etkinliklerimizden ilk önce haber sahibi olmak istiyorsanız; bize abone olmayı unutmayın!!
-                            </p>
-                            <div class="separator"></div>
-                            <form class="form-inline margin-clear justify-content-center" action="<?php echo base_url("abone-ol"); ?>" method="post">
-                                <div class="form-group has-feedback">
-                                    <label class="sr-only" for="subscribe2">E-posta Adresiniz</label>
-                                    <input type="email" class="form-control" id="subscribe2" placeholder="E-posta adresiniz" name="subscribe_email" required="">
-                                    <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
-                                    <i class="fa fa-envelope form-control-feedback"></i>
-                                </div>
-                                <button type="submit" class="ml-2 btn btn-gray-transparent btn-animated margin-clear">Abone Ol <i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <div class="clearfix"></div>
