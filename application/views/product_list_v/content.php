@@ -1,35 +1,36 @@
-<section class="main-container dark-translucent-bg" style="background-image:url('<?php echo base_url("assets/images");?>/roof.jpg'); background-position: 50% 27%;">
+<section class="main-container dark-bg-black">
     <div class="container">
-        <h1 class="page-title">Hizmetlerimiz</h1>
+        <h1 class="page-title" style="color: #cccccc">Hizmetlerimiz</h1>
         <p>Sunduğumuz Hizmetlerde Kalite, Zaman ve Memnuniyet Önceliğimizdir</p>
         <div class="separator-2"></div>
 
         <div class="row">
 
             <?php foreach($products as $product) { ?>
-
-                <div class="col-sm-4">
-                    <div class="image-box style-2 mb-20 bordered">
-                        <div class="overlay-container overlay-visible">
-
+                <div class="col-sm-4 justify-content-center">
+                    <div class="image-box shadow text-center mb-20">
+                        <div class="overlay-container justify-content-center">
                             <?php
                                 $image = get_product_cover_image($product->id);
                                 $image = ($image) ? base_url("panel/uploads/product_v/348x215/$image") : base_url("assets/images/portfolio-1.jpg");
                             ?>
-
                             <img src="<?php echo $image; ?>" alt="<?php echo $product->title; ?>">
-                            <div class="overlay-bottom text-left">
-                                <p class="lead margin-clear"><?php echo $product->title; ?></p>
+                            <div class="overlay-top">
+                                <div class="text"></div>
                             </div>
-                        </div>
-                        <div class="body">
-                            <p><?php echo character_limiter(strip_tags($product->description), 30); ?></p>
-                            <a href="<?php echo base_url("hizmetlerimiz-detay/$product->url"); ?>" class="btn btn-default btn-sm btn-hvr hvr-sweep-to-right margin-clear">Görüntüle<i class="fa fa-arrow-right pl-10"></i></a>
+                            <div class="overlay-bottom">
+                                <div class="text">
+                                    <a href="<?php echo base_url("hizmetlerimiz-detay/$product->url"); ?>">
+                                        <h3><?php echo $product->title; ?></h3>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             <?php } ?>
+
 
         </div>
     </div>

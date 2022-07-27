@@ -1,4 +1,4 @@
-<div class="main-container">
+<div class="main-container dark-bg-black">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -59,7 +59,7 @@
                             <!-- main start -->
                             <!-- ================ -->
                             <div class="main col-md-12">
-                                <h1 class="title"><?php echo $product->title; ?></h1>
+                                <h1 class="title" style="color: darkgrey"><?php echo $product->title; ?></h1>
                                 <div class="separator-2"></div>
                                 <p><?php echo $product->description; ?></p>
                             </div>
@@ -73,7 +73,7 @@
                 <!-- ================ -->
                 <section class="section pv-40 clearfix">
                     <div class="container">
-                        <h3>Diğer <strong>Ürünler</strong></h3>
+                        <h3 style="color: darkgrey">Diğer <strong>Ürünler</strong></h3>
                         <div class="row grid-space-10">
                             <?php foreach($other_products as $product) { ?>
 
@@ -86,13 +86,13 @@
                                             $image = ($image) ? base_url("panel/uploads/product_v/348x215/$image") : base_url("assets/images/portfolio-1.jpg");
                                             ?>
 
-                                            <img src="<?php echo $image; ?>" alt="">
+                                            <img class="responsive" src="<?php echo $image; ?>" alt="<?= $product->title; ?>">
                                             <div class="overlay-bottom text-left">
                                                 <p class="lead margin-clear"><?php echo $product->title; ?></p>
                                             </div>
                                         </div>
                                         <div class="body">
-                                            <p><?php echo character_limiter(strip_tags($product->description), 30); ?></p>
+                                            <p style="color: darkgrey"><?php echo character_limiter(strip_tags($product->description), 30); ?></p>
                                             <a href="<?php echo base_url("hizmetlerimiz-detay/$product->url"); ?>" class="btn btn-default btn-sm btn-hvr hvr-sweep-to-right margin-clear">Görüntüle<i class="fa fa-arrow-right pl-10"></i></a>
                                         </div>
                                     </div>

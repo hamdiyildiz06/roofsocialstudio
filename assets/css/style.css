@@ -528,6 +528,11 @@ tbody {
   color: #cdcdcd;
 }
 
+.dark-bg-black {
+  background-color: #000000 !important;
+  color: #cdcdcd;
+}
+
 .dark-bg + .dark-bg:not(.image-box):not(.full-image-container):not(.full-text-container):not(.full-width-section) {
   background-color: #555555;
 }
