@@ -58,7 +58,7 @@
                      <li>
                         <a href="<?php echo base_url("dashboard"); ?>">
                             <i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg"></i>
-                            <span class="menu-text">Dashboard</span>
+                            <span class="menu-text">Anasayfa</span>
                         </a>
                     </li>
                 <?php } ?>
@@ -72,52 +72,52 @@
                     </li>
                 <?php } ?>
 
-                <?php if (isAllowedViewModule("emailsettings")){ ?>
+<!--                <?php /*if (isAllowedViewModule("emailsettings")){ */?>
                     <li>
-                        <a href="<?php echo base_url("emailsettings"); ?>">
+                        <a href="<?php /*echo base_url("emailsettings"); */?>">
                             <i class="menu-icon zmdi zmdi-email zmdi-hc-lg"></i>
                             <span class="menu-text">E-posta Ayarları</span>
                         </a>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
-                <?php if (isAllowedViewModule("galleries")){ ?>
+<!--                <?php /*if (isAllowedViewModule("galleries")){ */?>
                     <li>
-                        <a href="<?php echo base_url("galleries"); ?>">
+                        <a href="<?php /*echo base_url("galleries"); */?>">
                             <i class="menu-icon zmdi zmdi-apps zmdi-hc-lg"></i>
                             <span class="menu-text">Galeri İşlemleri</span>
                         </a>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
-                <?php if (isAllowedViewModule("slides")){ ?>
+<!--                <?php /*if (isAllowedViewModule("slides")){ */?>
                     <li>
-                        <a href="<?php echo base_url("slides"); ?>">
+                        <a href="<?php /*echo base_url("slides"); */?>">
                             <i class="menu-icon zmdi zmdi-layers zmdi-hc-lg"></i>
                             <span class="menu-text">Slider</span>
                         </a>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
                 <?php if (isAllowedViewModule("product")){ ?>
                     <li>
                         <a href="<?php echo base_url("product"); ?>">
                             <i class="menu-icon fa fa-cubes"></i>
-                            <span class="menu-text">Ürünler</span>
-                        </a>
-                    </li>
-                <?php } ?>
-
-                <?php if (isAllowedViewModule("services")){ ?>
-                    <li>
-                        <a href="<?php echo base_url("services"); ?>">
-                            <i class="menu-icon fa fa-cutlery"></i>
                             <span class="menu-text">Hizmetlerimiz</span>
                         </a>
                     </li>
                 <?php } ?>
 
-                <?php if (isAllowedViewModule("portfolio_categories") || isAllowedViewModule("portfolio")){ ?>
+<!--                <?php /*if (isAllowedViewModule("services")){ */?>
+                    <li>
+                        <a href="<?php /*echo base_url("services"); */?>">
+                            <i class="menu-icon fa fa-cutlery"></i>
+                            <span class="menu-text">Hizmetlerimiz</span>
+                        </a>
+                    </li>
+                --><?php /*} */?>
+
+<!--                <?php /*if (isAllowedViewModule("portfolio_categories") || isAllowedViewModule("portfolio")){ */?>
                     <li class="has-submenu">
                         <a href="javascript:void(0)" class="submenu-toggle">
                             <i class="menu-icon fa fa-asterisk"></i>
@@ -126,45 +126,45 @@
                         </a>
                         <ul class="submenu">
                             <li>
-                                <a href="<?php echo base_url("portfolio_categories"); ?>">
+                                <a href="<?php /*echo base_url("portfolio_categories"); */?>">
                                     <span class="menu-text">Portfolyo Kategorileri</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo base_url("portfolio"); ?>">
+                                <a href="<?php /*echo base_url("portfolio"); */?>">
                                     <span class="menu-text">Portfolyo</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
-                <?php if (isAllowedViewModule("news")){ ?>
+<!--                <?php /*if (isAllowedViewModule("news")){ */?>
                     <li>
-                        <a href="<?php echo base_url("news"); ?>">
+                        <a href="<?php /*echo base_url("news"); */?>">
                             <i class="menu-icon fa fa-newspaper-o"></i>
                             <span class="menu-text">Haberler</span>
                         </a>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
-                <?php if (isAllowedViewModule("courses")){ ?>
+<!--                <?php /*if (isAllowedViewModule("courses")){ */?>
                     <li>
-                        <a href="<?php echo base_url("courses"); ?>">
+                        <a href="<?php /*echo base_url("courses"); */?>">
                             <i class="menu-icon fa fa-calendar"></i>
                             <span class="menu-text">Eğitimler</span>
                         </a>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
-                <?php if (isAllowedViewModule("references")){ ?>
+<!--                <?php /*if (isAllowedViewModule("references")){ */?>
                     <li>
-                        <a href="<?php echo base_url("references"); ?>">
+                        <a href="<?php /*echo base_url("references"); */?>">
                             <i class="menu-icon zmdi zmdi-check zmdi-hc-lg"></i>
                             <span class="menu-text">Referanslar</span>
                         </a>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
                 <?php if (isAllowedViewModule("brands")){ ?>
                     <li>
@@ -175,14 +175,14 @@
                     </li>
                 <?php } ?>
 
-                <?php if (isAllowedViewModule("user_roles")){ ?>
+<!--                <?php /*if (isAllowedViewModule("user_roles")){ */?>
                     <li>
-                        <a href="<?php echo base_url("user_roles"); ?>">
+                        <a href="<?php /*echo base_url("user_roles"); */?>">
                             <i class="menu-icon fa fa-user-times"></i>
                             <span class="menu-text">Kullanıcı Rolü</span>
                         </a>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
                 <?php if (isAllowedViewModule("users")){ ?>
                     <li>
@@ -193,14 +193,14 @@
                     </li>
                 <?php } ?>
 
-                <?php if (isAllowedViewModule("dashboard")){ ?>
+<!--                <?php /*if (isAllowedViewModule("dashboard")){ */?>
                     <li>
                         <a href="javascript:void(0)">
                             <i class="menu-icon fa fa-users"></i>
                             <span class="menu-text">Aboneler</span>
                         </a>
                     </li>
-                <?php } ?>
+                --><?php /*} */?>
 
                 <?php if (isAllowedViewModule("testimonials")){ ?>
                     <li>

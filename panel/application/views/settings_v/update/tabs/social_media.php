@@ -24,8 +24,8 @@
         </div>
 
         <div class="form-group col-md-4">
-            <label>Twitter</label>
-            <input class="form-control" placeholder="Twitter Adresiniz"
+            <label>Tiktok</label>
+            <input class="form-control" placeholder="Tiktok Adresiniz"
                    name="twitter"
                    value="<?php echo isset($form_error) ? set_value("twitter") : $item->twitter; ?>">
         </div>

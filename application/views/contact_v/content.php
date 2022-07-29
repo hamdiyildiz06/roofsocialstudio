@@ -5,50 +5,17 @@
 <div class="banner dark-translucent-bg" style="background-image:url('<?php echo base_url("assets/images");?>/background-img-3.jpg'); background-position: 50% 30%;">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center col-md-offset-2 pv-20">
+            <div class="col-md-12 col-md-offset-2 pv-20">
                 <h1 class="page-title text-center">Bize Ulaşın</h1>
                 <div class="separator"></div>
                 <p class="lead text-center">
                     Bize ulaşmak için aşağıdaki kanallardan herhangi birini kullanabilirsiniz
                 </p>
-                <ul class="list-inline mb-20 text-center">
-                    <li><i class="text-default fa fa-map-marker"></i> <?php echo strip_tags($settings->address); ?></li>
-                    <li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10"></i> <?php echo $settings->phone_1; ?></a></li>
-                    <li><a href="mailto:<?php echo $settings->email;?>" class="link-dark"><i class="text-default fa fa-envelope-o pl-10"></i> <?php echo $settings->email;?></a></li>
-                </ul>
-                <div class="separator"></div>
-                <ul class="social-links circle animated-effect-1 margin-clear text-center space-bottom">
-                    <?php if($settings->facebook) { ?>
-                        <li class="facebook"><a target="_blank" href="<?php echo $settings->facebook; ?>"><i class="fa fa-facebook"></i></a></li>
-                    <?php } ?>
-                    <?php if($settings->twitter) { ?>
-                        <li class="twitter"><a target="_blank" href="<?php echo $settings->twitter; ?>"><i class="fa fa-twitter"></i></a></li>
-                    <?php } ?>
-                    <?php if($settings->instagram) { ?>
-                        <li class="instagram"><a target="_blank" href="<?php echo $settings->instagram; ?>"><i class="fa fa-instagram"></i></a></li>
-                    <?php } ?>
-                    <?php if($settings->linkedin) { ?>
-                        <li class="linkedin"><a target="_blank" href="<?php echo $settings->linkedin; ?>"><i class="fa fa-linkedin"></i></a></li>
-                    <?php } ?>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- banner end -->
 
-<!-- main-container start -->
-<!-- ================ -->
-<section class="main-container dark-bg">
-
-    <div class="container">
-        <div class="row">
-
-            <!-- main start -->
-            <!-- ================ -->
-            <div class="main col-md-12 space-bottom">
-                <h2 class="title" style="color: darkgrey">Bize yazın...</h2>
                 <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <?= $settings->mission; ?>
+                    </div>
                     <div class="col-md-6">
                         <div class="contact-form">
                             <form id="" class="margin-clear" role="form" method="post" action="<?php echo base_url("mesaj-gonder"); ?>">
@@ -89,14 +56,11 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div id="map-canvas-contact"></div>
-                    </div>
                 </div>
+                <div class="separator"></div>
             </div>
-            <!-- main end -->
         </div>
     </div>
-</section>
-<!-- main-container end -->
+</div>
+<!-- banner end -->
 <div class="clearfix"></div>

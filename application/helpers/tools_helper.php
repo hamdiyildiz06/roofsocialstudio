@@ -209,3 +209,16 @@ function get_gallery_by_url($url = ""){
     return ($gallery) ? $gallery : false;
 
 }
+
+function ilk_karakter_phone($phone){
+
+    $ilk_karakter = substr($phone, 0, 1);
+
+    if ($ilk_karakter == 0){
+        return "+9{$phone}";
+    }else{
+        return "+90".$phone;
+    }
+
+
+}

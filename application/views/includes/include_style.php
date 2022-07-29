@@ -13,6 +13,8 @@
 <link href="<?php echo base_url("assets");?>/bootstrap/css/bootstrap.css" rel="stylesheet">
 
 <!-- Font Awesome CSS -->
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" rel="stylesheet">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="<?php echo base_url("assets");?>/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 <!-- Fontello CSS -->
