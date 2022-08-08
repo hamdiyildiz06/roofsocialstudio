@@ -6,6 +6,13 @@
 <!--<![endif]-->
 <head>
 	<?php $this->load->view("includes/head"); ?>
+    <style>
+        @media (max-width: 991px) {
+            .navbar li {
+                background-color: #000000;
+            }
+        }
+    </style>
 </head>
 <!--<body class="front-page">-->
 <!--<body class="gradient-background-header transparent-header front-page ">-->
@@ -15,6 +22,7 @@
 <!-- scrollToTop -->
 <!-- ================ -->
 <!--<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>-->
+
 
 <div class="page-wrapper">
 
