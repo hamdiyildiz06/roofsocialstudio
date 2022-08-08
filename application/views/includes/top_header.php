@@ -1,6 +1,6 @@
 <?php $settings = get_settings(); ?>
 
-<div class="header-top dark">
+<div class="header-top dark dark-bg">
     <div class="container">
         <div class="row">
             <div class="col-2 col-md-5">

@@ -7,7 +7,7 @@
 <head>
 	<?php $this->load->view("includes/head"); ?>
 </head>
-<body class="front-page">
+<body class="front-page dark-bg">
 <!-- scrollToTop -->
 <!-- ================ -->
 <div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>

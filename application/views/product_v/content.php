@@ -73,7 +73,7 @@
                 <!-- ================ -->
                 <section class="section pv-40 clearfix">
                     <div class="container">
-                        <h3 style="color: darkgrey">Diğer <strong>Ürünler</strong></h3>
+                        <h3 style="color: darkgrey">Diğer <strong>Hizmetlerimiz</strong></h3>
                         <div class="row grid-space-10">
                             <?php foreach($other_products as $product) { ?>
 
