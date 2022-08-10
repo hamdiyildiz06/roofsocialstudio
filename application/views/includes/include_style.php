@@ -1,7 +1,8 @@
 
 <?php $settings = get_settings(); ?>
 <!-- Favicon -->
-<link rel="shortcut icon" href="<?php echo get_picture("settings_v", $settings->favicon, "32x32"); ?>">
+<!-- <link rel="shortcut icon" href="<?php // echo get_picture("settings_v", $settings->favicon, "32x32"); ?>"> -->
+<link rel="shortcut icon" href="<?= base_url() ?>/panel/uploads/settings_v/32x32/Roof-Logo-o-02.png">
 
 <!-- Web Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>

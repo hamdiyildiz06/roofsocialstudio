@@ -1,6 +1,6 @@
 <section class="main-container dark-bg">
     <div class="container">
-        <h1 class="page-title">Hizmetlerimiz</h1>
+        <h1 class="page-title">Mesai</h1>
         <p>Sunduğumuz Hizmetlerde Kalite, Zaman ve Memnuniyet Önceliğimizdir</p>
         <div class="separator-2"></div>
 
@@ -20,7 +20,7 @@
                             </div>
                             <div class="overlay-bottom">
                                 <div class="text">
-                                    <a href="<?php echo base_url("hizmetlerimiz-detay/$product->url"); ?>">
+                                    <a href="<?php echo base_url("mesai-detay/$product->url"); ?>">
                                         <h3><?php echo $product->title; ?></h3>
                                     </a>
                                 </div>

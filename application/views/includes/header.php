@@ -36,8 +36,8 @@
                         <!-- logo -->
                         <div id="logo" class="logo">
                             <a href="<?php echo base_url(); ?>">
-                                <img id="logo_img"
-                                     src="<?= base_url()."images/logo_light_blue.png"; ?>"
+                                <img width="300" height="70" id="logo_img" class="responsive"
+                                     src="<?= base_url() ?>/panel/uploads/settings_v/300x70/Roof-Logo-o-05.png"
                                      <?php // echo get_picture("settings_v", $settings->logo, "150x35"); ?>
 
                                      alt="<?php echo $settings->company_name; ?>">
@@ -74,7 +74,7 @@
 
                                         <?php //$this->agent->is_mobile() ?>
 
-                                            <img id="logo-img-mobile" src="<?php echo get_picture("settings_v",$settings->mobile_logo, "150x35"); ?>"
+                                            <img id="logo-img-mobile" src="<?php echo base_url() ?>/panel/uploads/settings_v/150x35/Roof-Logo-o-05.png"
                                                  alt="<?php echo $settings->company_name; ?>">
 
                                         </a>
@@ -105,7 +105,7 @@
                                         </li>
 
                                         <li class="nav-item ">
-                                            <a href="<?php echo base_url("hizmetlerimiz"); ?>" class="nav-link">Hizmetlerimiz</a>
+                                            <a href="<?php echo base_url("mesai"); ?>" class="nav-link">Mesai</a>
                                         </li>
 
                                         <li class="nav-item ">
