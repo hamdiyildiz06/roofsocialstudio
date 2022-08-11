@@ -11,7 +11,7 @@
     <!-- "dark": dark version of header top e.g. class="header-top dark" -->
     <!-- "colored": colored version of header top e.g. class="header-top colored" -->
     <!-- ================ -->
-    <?php $this->load->view("includes/top_header"); ?>
+<!--    --><?php //$this->load->view("includes/top_header"); ?>
     <!-- header-top end -->
 
     <!-- header start -->
@@ -37,7 +37,7 @@
                         <div id="logo" class="logo">
                             <a href="<?php echo base_url(); ?>">
                                 <img width="300" height="70" id="logo_img" class="responsive"
-                                     src="<?= base_url() ?>/panel/uploads/settings_v/300x70/Roof-Logo-o-05.png"
+                                     src="<?= base_url() ?>/panel/uploads/settings_v/150x35/Roof-Logo-o-05.png"
                                      <?php // echo get_picture("settings_v", $settings->logo, "150x35"); ?>
 
                                      alt="<?php echo $settings->company_name; ?>">
@@ -45,7 +45,7 @@
                         </div>
 
                         <!-- name-and-slogan -->
-                        <div class="site-slogan">
+                        <div class="site-slogan mb-1">
                             <?php echo $settings->slogan; ?>
                         </div>
 
