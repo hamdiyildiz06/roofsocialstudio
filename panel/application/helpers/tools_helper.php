@@ -271,3 +271,12 @@ function get_page_list($page = ""){
 
     return (empty($page)) ? $page_list : $page_list[$page];
 }
+
+function basamak_belirleme($rakam){
+    if ($rakam >= 9)
+    {
+        return $rakam;
+    }else{
+        return "0".$rakam;
+    }
+}
