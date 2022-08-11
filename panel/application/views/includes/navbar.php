@@ -24,12 +24,12 @@
                 <?php if($settings->logo != "default"){ ?>
                     <img
                         width="70"
-                        src="<?php echo get_picture("settings_v",$settings->logo, "150x35"); ?>"
+                        src="<?= base_url(); ?>uploads/settings_v/150x35/Roof-Logo-o-05.png"
                         alt=""
                         class="img-responsive">
 
                 <?php } else {?>
-
+"
                     <img
                         width="70"
                         src="<?php echo base_url("assets/assets/images/index/infinity-logo.png"); ?>"
@@ -39,9 +39,7 @@
                 <?php } ?>
 
             </span>
-            <span class="brand-name">
-                <?php echo $settings->company_name; ?>
-            </span>
+
         </a>
     </div><!-- .navbar-header -->
 
